@@ -31,17 +31,18 @@ const Nav = () => {
     
 
   return (
-    <Flex flexDirection={'row'} justifyContent={'space-between'}>
+    <Flex bg={'aliceblue'} flexDirection={'row'} justifyContent={'space-between'} alignItems={'center'} p={'1rem'}>
         <Logo />
 
-        <Flex flexDirection={'row'}>
+        <Flex flexDirection={'row'} alignItems={'center'} gap={'1rem'}>
             {
                 links1.map(link => <NavLink to={link.href} text={link.text} />)
             }
         </Flex>
 
-        <Flex flexDirection={'row'}>
-            <Button colorScheme={'blue'}> mm </Button>
+        <Flex flexDirection={'row'} alignItems={'center'} gap={'1rem'}>
+            <NavLink to={'login'} text={'login'} />
+            <Button colorScheme={'#d6850c'}> register </Button>
         </Flex>
     </Flex>
   )
