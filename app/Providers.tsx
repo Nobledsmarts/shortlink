@@ -2,6 +2,7 @@
 
 import { CacheProvider } from "@chakra-ui/next-js"
 import { ChakraProvider } from "@chakra-ui/react"
+import { theme } from "./theme"
 import React from "react"
 
 const Providers = ({
@@ -11,7 +12,7 @@ const Providers = ({
 }) => {
   return (
     <CacheProvider>
-        <ChakraProvider>
+        <ChakraProvider theme={theme}>
             { children }
         </ChakraProvider>
     </CacheProvider>
