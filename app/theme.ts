@@ -1,9 +1,10 @@
 import { extendTheme } from '@chakra-ui/react'
 
 const colors = {
-    brand: {
+    transparent: 'transparent', 
+    // brand: {
 
-    }
+    // }
 }
 
 export const theme = extendTheme({ colors });
