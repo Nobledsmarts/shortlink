@@ -23,7 +23,11 @@ export default function Home() {
             >
               The Shorter, The Better!
             </Heading>
-          <Text fontSize={'xl'} fontFamily={'raleway'} width={'lg'}> 
+          <Text 
+            fontSize={'xl'} 
+            fontFamily={'raleway'} 
+            width={'lg'}
+          > 
             ShortLink is a custom short link personalization tool that enables you to target, engage and helps you drive more customers.
           </Text>
 
