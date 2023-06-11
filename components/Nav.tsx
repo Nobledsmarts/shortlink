@@ -28,10 +28,11 @@ const links1 = [
 ];
 
 const Nav = () => {
-    
+    const bg = ['#13889f', 'aliceblue'];
+    const color = ['#fff', 'cyan.900'];
 
   return (
-    <Flex bg={'aliceblue'} flexDirection={'row'} justifyContent={'space-between'} alignItems={'center'} p={'1rem'}>
+    <Flex bg={bg[1]} color={color[1]} fontWeight={'500'} fontSize={'md'} flexDirection={'row'} justifyContent={'space-between'} alignItems={'center'} p={'1rem'}>
         <Logo />
 
         <Flex flexDirection={'row'} alignItems={'center'} gap={'1rem'}>
@@ -42,7 +43,7 @@ const Nav = () => {
 
         <Flex flexDirection={'row'} alignItems={'center'} gap={'1rem'}>
             <NavLink to={'login'} text={'login'} />
-            <Button colorScheme={'#d6850c'}> register </Button>
+            <Button bg={'orange.400'} color={'aliceblue'}> register </Button>
         </Flex>
     </Flex>
   )

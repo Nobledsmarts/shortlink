@@ -1,8 +1,16 @@
+import { HStack, Text } from '@chakra-ui/react'
 import React from 'react'
 
 const Logo = () => {
   return (
-    <div>Logo</div>
+    <HStack spacing={'0'}>
+      <Text fontWeight={'extrabold'}>
+        Short.
+      </Text>
+      <Text fontWeight={'extrabold'} color={'orange.500'}>
+        Link
+      </Text>
+    </HStack>
   )
 }
 
