@@ -65,13 +65,15 @@ export default function Home() {
            bgClip={'text'} 
            color={'cyan.900'} 
            as={'h1'} 
-           fontSize={'5xl'} 
-           mt={'10px'} 
-           fontFamily={'rubik'} 
-           fontWeight={'500'} 
+           fontSize={'4xl'}
+           textAlign={'center'}
+           mt={'10px'}
+           w={'lg'}
+           fontFamily={'montserrat'} 
+           fontWeight={'700'} 
            bgGradien={'linear-gradient(to right, #121FCF 0%, #CF1512 100%)'}
           >
-            What would you like to create?
+            What would you like to create? <span className="waving-hand">👋</span>
           </Heading>
         </Flex>
       </HStack>
