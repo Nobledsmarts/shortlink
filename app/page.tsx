@@ -10,7 +10,19 @@ export default function Home() {
       <Nav />
       <HStack position={'relative'} justifyContent={'space-between'} color={'aliceblue'} bg={'#13889f'} minHeight={450}>
         <Flex px={'5rem'} flexDirection={'column'} gap={'1.5rem'} flexBasis={'60%'} h={'450'} justifyContent={'flex-start'} alignItems={'left'} bg={''}>
-          <Heading px={'0'} bgClip={'text'} color={'white'} as={'h1'} fontSize={'5xl'} mt={'100px'} fontFamily={'rubik'} fontWeight={'700'} bgGradient={'linear-gradient(to right, #121FCF 0%, #CF1512 100%)'}>The Shorter, The Better!</Heading>
+          <Heading 
+            px={'0'} 
+            bgClip={'text'} 
+            color={'white'} 
+            as={'h1'} 
+            fontSize={'5xl'} 
+            mt={'100px'} 
+            fontFamily={'rubik'} 
+            fontWeight={'700'} 
+            bgGradient={'linear-gradient(to right, #121FCF 0%, #CF1512 100%)'}
+            >
+              The Shorter, The Better!
+            </Heading>
           <Text fontSize={'xl'} fontFamily={'raleway'} width={'lg'}> 
             ShortLink is a custom short link personalization tool that enables you to target, engage and helps you drive more customers.
           </Text>
