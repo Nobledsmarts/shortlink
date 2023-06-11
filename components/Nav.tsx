@@ -43,7 +43,7 @@ const Nav = () => {
 
         <Flex flexDirection={'row'} alignItems={'center'} gap={'1rem'}>
             <NavLink to={'login'} text={'login'} />
-            <Button bg={'orange.400'} color={'aliceblue'}> register </Button>
+            <Button borderRadius={'2rem'} bg={'orange.400'} color={'aliceblue'}> register </Button>
         </Flex>
     </Flex>
   )
