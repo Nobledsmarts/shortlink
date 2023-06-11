@@ -68,7 +68,17 @@ export default function Home() {
       </HStack>
       <HStack mt={'5rem'} justifyContent={'center'}>
         <Flex justifyContent={'center'}>
-          <Heading px={'0'} bgClip={'text'} color={'cyan.900'} as={'h1'} fontSize={'5xl'} mt={'10px'} fontFamily={'rubik'} fontWeight={'500'} bgGradien={'linear-gradient(to right, #121FCF 0%, #CF1512 100%)'}>
+          <Heading 
+           px={'0'} 
+           bgClip={'text'} 
+           color={'cyan.900'} 
+           as={'h1'} 
+           fontSize={'5xl'} 
+           mt={'10px'} 
+           fontFamily={'rubik'} 
+           fontWeight={'500'} 
+           bgGradien={'linear-gradient(to right, #121FCF 0%, #CF1512 100%)'}
+          >
             What would you like to create?
           </Heading>
         </Flex>
