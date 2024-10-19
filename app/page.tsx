@@ -1,8 +1,11 @@
 'use client'
 import DottedLine from '@/components/DottedLine'
 import Nav from '@/components/Nav'
-import { Box, Flex, HStack, Heading, Text, Image as ChackraImage, Button} from '@chakra-ui/react'
+import { Box, Flex, HStack, Icon, Heading, Text, Image as ChackraImage, Button, Tabs, TabList, Tab, TabPanels, TabPanel} from '@chakra-ui/react'
 import Image from 'next/image'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+// import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 export default function Home() {
   return (
@@ -58,23 +61,43 @@ export default function Home() {
           <ChackraImage objectFit={'cover'} style={{zoom : 1}} color='#e50000'  src={'/wave2.svg'} alt='' width={'100%'} height={'250px'}/>
         </Box>
       </HStack>
-      <HStack mt={'5rem'} justifyContent={'center'}>
+      <HStack gap={'1rem'} flexDirection={'column'} mt={'5rem'} justifyContent={'center'}>
         <Flex justifyContent={'center'}>
           <Heading 
            px={'0'} 
            bgClip={'text'} 
            color={'cyan.900'} 
            as={'h1'} 
-           fontSize={'4xl'}
+           fontSize={'3xl'}
            textAlign={'center'}
            mt={'10px'}
            w={'lg'}
-           fontFamily={'montserrat'} 
-           fontWeight={'700'} 
+           fontFamily={'rubik'} 
+           fontWeight={'500'} 
            bgGradien={'linear-gradient(to right, #121FCF 0%, #CF1512 100%)'}
           >
             What would you like to create? <span className="waving-hand">👋</span>
           </Heading>
+        </Flex>
+        <Flex bg={'#ff'} w={'3xl'} mb={'2rem'} boxShadow='bse'>
+          <Tabs isFitte align='center' w={'100%'} variant='enclosed'>
+            <TabList>
+              <Tab _selected={{ bg : '#fff'}}>
+              <FontAwesomeIcon icon={'fa-solid qrcode'} />
+                {/* <Icon as={() => <FontAwesomeIcon icon="fa-solid fa-qrcode" />} /> */}
+                Short Link
+              </Tab>
+              <Tab _selected={{ bg : '#fff'}}>QR Code</Tab>
+            </TabList>
+            <TabPanels bg={'#fff'}>
+              <TabPanel>
+                <p>one!</p>
+              </TabPanel>
+              <TabPanel>
+                <p>two!</p>
+              </TabPanel>
+            </TabPanels>
+          </Tabs>
         </Flex>
       </HStack>
     </main>
